@@ -1,0 +1,16 @@
+# sequelize
+``bash
+npx sequelize-cli model:generate --name product --attributes name:string,price:integer,stock:integer,status:string
+
+npx sequelize-cli model:generate --name order --attributes status:string,profileId:integer
+
+npx sequelize-cli model:generate --name orderItem --attributes quantity:integer,orderId:integer,productId:integer
+
+npx sequelize-cli model:generate --name profile --attributes name:string,tableNumber:integer
+
+npx sequelize-cli model:generate --name product --attributes productName:string,category:string,status:string,defectId:integer
+
+npx sequelize-cli model:generate --name defect --attributes defectName:string,type:string,area:string,suggestion:string, productId:integer
+
+npx sequelize-cli model:generate --name productDefect --attributes productId:integer,defectId:integer
+``` 
